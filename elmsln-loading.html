@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`elmsln-loading`
+A LRN element
+
+@demo demo/index.html
+-->
+
+<dom-module id="elmsln-loading">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>[[title]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'elmsln-loading',
+
+      properties: {
+        title: {
+          type: String,
+          value: 'elmsln-loading',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
