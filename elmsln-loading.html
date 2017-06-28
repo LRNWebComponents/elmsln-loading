@@ -41,13 +41,16 @@ A LRN element
       .large {
         width: 5em;
         height: 5em;
-      }
-      .epic {
-        width: 10em;
-        height: 10em;
         -webkit-animation:spin 2.5s linear infinite;
         -moz-animation:spin 2.5s linear infinite;
         animation:spin 2.5s linear infinite;
+      }
+      .epic {
+        width: 25em;
+        height: 25em;
+        -webkit-animation:spin 10s linear infinite;
+        -moz-animation:spin 10s linear infinite;
+        animation:spin 10s linear infinite;
       }
       @-moz-keyframes spin { 100% { -moz-transform: rotate(60deg); filter:saturate(10) invert(.9);} }
       @-webkit-keyframes spin { 100% { -webkit-transform: rotate(60deg); filter:saturate(10) invert(.9);} }
