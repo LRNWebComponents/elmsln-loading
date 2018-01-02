@@ -4,7 +4,9 @@
 
 <!--
 `elmsln-loading`
-A LRN element
+A spinner to tell the user that something is loading. This is just the spinner though
+and doesn't provide any text or anything else to indicate that it's loading, just the
+visual.
 
 @demo demo/index.html
 -->
@@ -57,7 +59,7 @@ A LRN element
       @keyframes spin { 100% { -webkit-transform: rotate(60deg); transform:rotate(60deg);} }
 
     </style>
-    <lrn-icon icon="network" class$="{{color}} {{size}}"></lrn-icon>
+    <lrn-icon icon="network" class$="[[color]] [[size]]"></lrn-icon>
   </template>
 
   <script>
@@ -69,7 +71,6 @@ A LRN element
          */
         color: {
           type: String,
-          notify: true,
           reflectToAttribute: true,
         },
         /**
@@ -77,7 +78,6 @@ A LRN element
          */
         size: {
           type: String,
-          notify: true,
           reflectToAttribute: true,
           value: 'medium',
         }
